@@ -1,0 +1,76 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .background { fill: #F8F9FA; }
+    .primary-accent { fill: #007BFF; }
+    .secondary-accent { fill: #6C757D; }
+    .highlight-text { fill: #28A745; }
+    .icon-fill { fill: #FFFFFF; }
+    .shadow { fill: rgba(0,0,0,0.1); }
+    .text { font-family: 'Segoe UI', 'Roboto', sans-serif; font-size: 24px; fill: #333; }
+    .subtle-text { font-family: 'Segoe UI', 'Roboto', sans-serif; font-size: 18px; fill: #666; }
+    .large-text { font-family: 'Segoe UI', 'Roboto', sans-serif; font-size: 40px; font-weight: bold; fill: #333; }
+  </style>
+
+  <!-- Background -->
+  <rect class="background" width="800" height="600"/>
+
+  <!-- Main Illustration Area -->
+  <g transform="translate(50, 50)">
+
+    <!-- AI Element (Brain/Chip) -->
+    <g transform="translate(100, 200)">
+      <circle cx="75" cy="75" r="60" class="primary-accent"/>
+      <circle cx="75" cy="75" r="40" class="icon-fill"/>
+      <path d="M65 55 L85 55 L85 75 L65 75 Z" class="primary-accent"/>
+      <path d="M65 85 L85 85 L85 105 L65 105 Z" class="primary-accent"/>
+      <rect x="50" y="50" width="50" height="50" rx="5" class="secondary-accent"/>
+      <rect x="60" y="60" width="30" height="30" rx="3" class="icon-fill"/>
+    </g>
+
+    <!-- Connecting Line to Mythical Element -->
+    <line x1="235" y1="275" x2="350" y2="200" stroke-width="4" stroke-dasharray="10,5" class="secondary-accent"/>
+
+    <!-- Mythical Creature Element (Wing/Horn/Scale) -->
+    <g transform="translate(350, 150)">
+      <path d="M0,50 C50,0 150,0 200,50 C150,100 50,100 0,50 Z" class="secondary-accent"/>
+      <path d="M100,75 L120,65 L140,75 L120,85 Z" class="primary-accent"/>
+      <circle cx="100" cy="50" r="15" class="highlight-text"/>
+      <circle cx="150" cy="50" r="15" class="highlight-text"/>
+    </g>
+
+    <!-- Connecting Line to Profile Element -->
+    <line x1="450" y1="250" x2="600" y2="300" stroke-width="4" stroke-dasharray="10,5" class="secondary-accent"/>
+
+    <!-- Profile Element (Card/User Icon) -->
+    <g transform="translate(600, 300)">
+      <rect x="0" y="0" width="150" height="200" rx="15" class="primary-accent"/>
+      <rect x="10" y="10" width="130" height="180" rx="10" class="icon-fill"/>
+
+      <!-- User Icon -->
+      <g transform="translate(40, 40)">
+        <circle cx="45" cy="45" r="40" class="secondary-accent"/>
+        <circle cx="45" cy="35" r="15" class="icon-fill"/>
+        <path d="M20,70 C30,90 60,90 70,70 L20,70 Z" class="secondary-accent"/>
+      </g>
+    </g>
+
+    <!-- Text - Title -->
+    <text x="400" y="100" text-anchor="middle" class="large-text">Mythical</text>
+    <text x="400" y="140" text-anchor="middle" class="large-text">Companion</text>
+    <text x="400" y="180" text-anchor="middle" class="large-text">Profile Creator</text>
+
+    <!-- Text - Subtitle -->
+    <text x="400" y="230" text-anchor="middle" class="subtle-text">Powered by AI</text>
+
+    <!-- Icon Cluster (Representing creation/magic) -->
+    <g transform="translate(350, 400)">
+      <circle cx="0" cy="0" r="25" class="highlight-text"/>
+      <circle cx="50" cy="0" r="25" class="highlight-text"/>
+      <circle cx="25" cy="40" r="25" class="highlight-text"/>
+      <circle cx="25" cy="-40" r="25" class="highlight-text"/>
+      <path d="M0 0 L25 25 L0 50 Z" class="primary-accent"/>
+      <path d="M50 0 L25 25 L50 50 Z" class="primary-accent"/>
+    </g>
+
+  </g>
+</svg>
